@@ -33,18 +33,20 @@ Clone the relevant project
 git clone https://github.com/DRC-JAVA-Bootcamp/bitirme-projesi-frtyildiz.git
 ```
 -----
+## UML Diagram
+<img src="https://github.com/frtyildiz/LibraryManagementSystem/blob/main/images/LibraryManagementSystem.png">
+
+-----
 ## Some Examples of REST API Action
 
-<img src="https://github.com/DRC-JAVA-Bootcamp/bitirme-projesi-frtyildiz/blob/main/images/1.png">
-<img src="https://github.com/DRC-JAVA-Bootcamp/bitirme-projesi-frtyildiz/blob/main/images/2.png">
-<img src="https://github.com/DRC-JAVA-Bootcamp/bitirme-projesi-frtyildiz/blob/main/images/3.png">
-<img src="https://github.com/DRC-JAVA-Bootcamp/bitirme-projesi-frtyildiz/blob/main/images/4.png">
-<img src="https://github.com/DRC-JAVA-Bootcamp/bitirme-projesi-frtyildiz/blob/main/images/5.png">
-<img src="https://github.com/DRC-JAVA-Bootcamp/bitirme-projesi-frtyildiz/blob/main/images/6.png">
-<img src="https://github.com/DRC-JAVA-Bootcamp/bitirme-projesi-frtyildiz/blob/main/images/7.png">
-<img src="https://github.com/DRC-JAVA-Bootcamp/bitirme-projesi-frtyildiz/blob/main/images/8.png">
+<img src="https://github.com/frtyildiz/LibraryManagementSystem/blob/main/images/1.png">
+<img src="https://github.com/frtyildiz/LibraryManagementSystem/blob/main/images/2.png">
+<img src="https://github.com/frtyildiz/LibraryManagementSystem/blob/main/images/3.png">
+<img src="https://github.com/frtyildiz/LibraryManagementSystem/blob/main/images/4.png">
+<img src="https://github.com/frtyildiz/LibraryManagementSystem/blob/main/images/5.png">
+<img src="https://github.com/frtyildiz/LibraryManagementSystem/blob/main/images/6.png">
+<img src="https://github.com/frtyildiz/LibraryManagementSystem/blob/main/images/7.png">
+<img src="https://github.com/frtyildiz/LibraryManagementSystem/blob/main/images/8.png">
 
 ## License
 MIT
-
-
