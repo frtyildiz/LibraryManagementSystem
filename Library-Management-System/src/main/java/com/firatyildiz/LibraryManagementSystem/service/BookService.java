@@ -15,26 +15,20 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Optional;
 
 @Service
 public class BookService {
-
     @Autowired
     BookRepository bookRepository;
-
     @Autowired
     ModelMapper modelMapper;
-
     @Autowired
     AuthorService authorService;
-
     @Autowired
     CategoryService categoryService;
-
     @Autowired
     AuthorRepository authorRepository;
-
     public String saveBook(SaveBookRequestDto saveBookRequestDto) {
         long isbnRequest = saveBookRequestDto.getIsbn();
         String titleRequest = saveBookRequestDto.getTitle();
@@ -66,6 +60,7 @@ public class BookService {
         List<Book> bookList = new ArrayList<>();
         bookList.add(book);
         category.setBooks(bookList);
+
         author.setBooks(bookList);
 
         bookRepository.save(book);
@@ -82,17 +77,15 @@ public class BookService {
             BookResponseDto bookResponseDto = modelMapper.map(book, BookResponseDto.class);
             bookResponseDtos.add(bookResponseDto);
         }
-
         return bookResponseDtos;
     }
-
     public Book findBook(Integer bookId) {
         return bookRepository.findById(bookId).get();
     }
-
     public String updateBook(UpdateBookRequestDto updateBookRequestDto)
     {
 
+        int idBookRequest = updateBookRequestDto.getId();
         long isbnRequest = updateBookRequestDto.getIsbn();
         String titleRequest = updateBookRequestDto.getTitle();
         int authorIdRequest = updateBookRequestDto.getAuthorId();
@@ -107,7 +100,8 @@ public class BookService {
         Category category = categoryService.findCategory(categoryIdRequest);
         Author author = authorRepository.findById(authorIdRequest).get();
 
-        Book book = new Book();
+        Optional<Book> bookOptional = bookRepository.findById(idBookRequest);
+        Book book = bookOptional.get();
 
         book.setIsbn(isbnRequest);
         book.setTitle(titleRequest);
@@ -124,11 +118,12 @@ public class BookService {
 
         return "Changes Saved Successfully.";
     }
-
     public String deleteBookById(Integer bookId)
     {
-        Book book = bookRepository.findById(bookId).get();
+        Optional<Book> optionalBook = bookRepository.findById(bookId);
+        Book book = optionalBook.get();
         bookRepository.delete(book);
+
         return "The Book Deleted.";
     }
 }

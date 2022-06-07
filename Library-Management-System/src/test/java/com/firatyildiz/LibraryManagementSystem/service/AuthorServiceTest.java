@@ -14,23 +14,16 @@ import org.modelmapper.ModelMapper;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-
 @ExtendWith(MockitoExtension.class)
 class AuthorServiceTest {
-
     @InjectMocks
     AuthorService authorService;
-
     @Mock
     AuthorRepository authorRepository;
-
     @Mock
     ModelMapper modelMapper;
-
     @Test
     void testFindAuthorById()
     {
@@ -42,7 +35,6 @@ class AuthorServiceTest {
 
         assertEquals(authorMock, findAuthor);
     }
-
     @Test
     void testDeleteAuthorById()
     {
@@ -55,7 +47,6 @@ class AuthorServiceTest {
 
         assertEquals(deleteMessage, deleteAuthor);
     }
-
     @Test
     void testSaveAuthor()
     {
@@ -73,7 +64,6 @@ class AuthorServiceTest {
 
         assertEquals(saveAuthorMessage, saveAuthor);
     }
-
     @Test
     void testUpdateAuthor()
     {
@@ -93,5 +83,4 @@ class AuthorServiceTest {
 
         assertEquals(updateAuthorMessage, updateAuthor);
     }
-
 }
