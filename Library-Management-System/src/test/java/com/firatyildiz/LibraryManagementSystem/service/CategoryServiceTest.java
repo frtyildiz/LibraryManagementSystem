@@ -16,14 +16,19 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
+
 @ExtendWith(MockitoExtension.class)
 class CategoryServiceTest {
+
     @InjectMocks
     CategoryService categoryService;
+
     @Mock
     CategoryRepository categoryRepository;
+
     @Mock
     ModelMapper modelMapper;
+
     @Test
     void testSaveCategory()
     {
@@ -41,6 +46,7 @@ class CategoryServiceTest {
 
         assertEquals(saveCategory, saveCategoryMessage);
     }
+
     @Test
     void testFindCategory()
     {
@@ -52,6 +58,7 @@ class CategoryServiceTest {
 
         assertEquals(categoryMock, findCategory);
     }
+
     @Test
     void testUpdateCategory()
     {
@@ -69,6 +76,7 @@ class CategoryServiceTest {
 
         assertEquals(updateCategory, updateCategoryMessage);
     }
+
     @Test
     void testDeleteCategoryById()
     {

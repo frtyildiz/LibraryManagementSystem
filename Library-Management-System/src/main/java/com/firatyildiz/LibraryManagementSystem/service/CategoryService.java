@@ -12,23 +12,30 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
 @Service
 public class CategoryService {
+
     @Autowired
     CategoryRepository categoryRepository;
+
     @Autowired
     ModelMapper modelMapper;
-    public String saveCategory(SaveCategoryRequestDto saveCategoryRequestDto) {
+
+    public String saveCategory(SaveCategoryRequestDto saveCategoryRequestDto)
+    {
         Category category = modelMapper.map(saveCategoryRequestDto, Category.class);
 
         category = categoryRepository.save(category);
 
         return category.getCategoryName() + " Has Been Successfully Created.";
     }
+
     public Category findCategory(Integer categoryId)
     {
         return categoryRepository.findById(categoryId).get();
     }
+
     public String updateCategory(UpdateCategoryRequestDto updateCategoryRequestDto)
     {
         int idCategoryRequest = updateCategoryRequestDto.getId();
@@ -43,6 +50,7 @@ public class CategoryService {
 
         return "Change Saved Successfully.";
     }
+
     public String deleteCategoryById(Integer categoryId)
     {
         Optional<Category> optionalCategory = categoryRepository.findById(categoryId);
@@ -51,6 +59,7 @@ public class CategoryService {
 
         return "The Category Deleted.";
     }
+
     public List<CategoryResponseDto> findAllCategory()
     {
         Iterable<Category> categories = categoryRepository.findAll();

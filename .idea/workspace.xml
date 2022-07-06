@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="848db453-445e-47ae-95df-e84b91772e3d" name="Changes" comment="" />
+    <list default="true" id="848db453-445e-47ae-95df-e84b91772e3d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/configuration/GeneralConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/configuration/GeneralConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/controller/AuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/requestDto/SaveAuthorRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/requestDto/SaveAuthorRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/requestDto/SaveBookRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/requestDto/SaveBookRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/requestDto/SaveCategoryRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/requestDto/SaveCategoryRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/requestDto/UpdateAuthorRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/requestDto/UpdateAuthorRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/requestDto/UpdateBookRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/requestDto/UpdateBookRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/requestDto/UpdateCategoryRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/requestDto/UpdateCategoryRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/responseDto/AuthorResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/responseDto/AuthorResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/responseDto/BookResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/responseDto/BookResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/responseDto/CategoryResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/dto/responseDto/CategoryResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/entity/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/exception/GeneralExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/exception/GeneralExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/repository/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/repository/AuthorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/service/AuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/service/AuthorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/main/java/com/firatyildiz/LibraryManagementSystem/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/test/java/com/firatyildiz/LibraryManagementSystem/service/AuthorServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/test/java/com/firatyildiz/LibraryManagementSystem/service/AuthorServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/test/java/com/firatyildiz/LibraryManagementSystem/service/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/test/java/com/firatyildiz/LibraryManagementSystem/service/BookServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library-Management-System/src/test/java/com/firatyildiz/LibraryManagementSystem/service/CategoryServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library-Management-System/src/test/java/com/firatyildiz/LibraryManagementSystem/service/CategoryServiceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,15 +81,9 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "c068b7721baff75a7fcf7b9f5b9969e0"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />

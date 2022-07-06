@@ -3,8 +3,10 @@ package com.firatyildiz.LibraryManagementSystem.dto.requestDto;
 import lombok.Data;
 
 import java.time.LocalDate;
+
 @Data
 public class SaveBookRequestDto {
+
     private long isbn;
     private String title;
     private int authorId;

@@ -19,17 +19,24 @@ import java.util.Optional;
 
 @Service
 public class BookService {
+
     @Autowired
     BookRepository bookRepository;
+
     @Autowired
     ModelMapper modelMapper;
+
     @Autowired
     AuthorService authorService;
+
     @Autowired
     CategoryService categoryService;
+
     @Autowired
     AuthorRepository authorRepository;
-    public String saveBook(SaveBookRequestDto saveBookRequestDto) {
+
+    public String saveBook(SaveBookRequestDto saveBookRequestDto)
+    {
         long isbnRequest = saveBookRequestDto.getIsbn();
         String titleRequest = saveBookRequestDto.getTitle();
         int authorIdRequest = saveBookRequestDto.getAuthorId();
@@ -68,7 +75,8 @@ public class BookService {
         return book.getTitle() + " Has Been Successfully Created.";
     }
 
-    public List<BookResponseDto> findAllBook() {
+    public List<BookResponseDto> findAllBook()
+    {
         Iterable<Book> books = bookRepository.findAll();
 
         List<BookResponseDto> bookResponseDtos = new ArrayList<>();
@@ -79,12 +87,14 @@ public class BookService {
         }
         return bookResponseDtos;
     }
-    public Book findBook(Integer bookId) {
+
+    public Book findBook(Integer bookId)
+    {
         return bookRepository.findById(bookId).get();
     }
+
     public String updateBook(UpdateBookRequestDto updateBookRequestDto)
     {
-
         int idBookRequest = updateBookRequestDto.getId();
         long isbnRequest = updateBookRequestDto.getIsbn();
         String titleRequest = updateBookRequestDto.getTitle();
@@ -118,6 +128,7 @@ public class BookService {
 
         return "Changes Saved Successfully.";
     }
+
     public String deleteBookById(Integer bookId)
     {
         Optional<Book> optionalBook = bookRepository.findById(bookId);

@@ -12,12 +12,16 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
 @Service
 public class AuthorService {
+
     @Autowired
     AuthorRepository authorRepository;
+
     @Autowired
     ModelMapper modelMapper;
+
     public String saveAuthor(SaveAuthorRequestDto saveAuthorRequestDto)
     {
         Author author = modelMapper.map(saveAuthorRequestDto, Author.class);
@@ -26,10 +30,12 @@ public class AuthorService {
 
         return author.getName() + " " + author.getLastname() + " Has Been Created Successfully.";
     }
+
     public Author findAuthorById(Integer authorId)
     {
         return authorRepository.findById(authorId).get();
     }
+
     public String updateAuthor(UpdateAuthorRequestDto updateAuthorRequestDto)
     {
         int idAuthorRequest = updateAuthorRequestDto.getId();
@@ -46,6 +52,7 @@ public class AuthorService {
 
         return "Changes Saved Successfully.";
     }
+
     public String deleteAuthorById(Integer authorId)
     {
         Optional<Author> authorOptional = authorRepository.findById(authorId);
@@ -54,6 +61,7 @@ public class AuthorService {
 
         return "The Author Deleted.";
     }
+
     public List<AuthorResponseDto> findAllAuthor()
     {
         Iterable<Author> authors = authorRepository.findAll();

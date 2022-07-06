@@ -15,21 +15,28 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
+
 @ExtendWith(MockitoExtension.class)
 class BookServiceTest {
 
     @InjectMocks
     BookService bookService;
+
     @Mock
     BookRepository bookRepository;
+
     @Mock
     ModelMapper modelMapper;
+
     @Mock
     AuthorService authorService;
+
     @Mock
     CategoryService categoryService;
+
     @Mock
     AuthorRepository authorRepository;
+
     @Test
     void testFindBook()
     {
@@ -41,6 +48,7 @@ class BookServiceTest {
 
         assertEquals(bookMock, findBook);
     }
+
     @Test
     void testDeleteBookById()
     {
@@ -53,7 +61,6 @@ class BookServiceTest {
 
         assertEquals(deleteBook, deleteBookMessage);
     }
-
 
     @Test
     void testUpdateBook()
